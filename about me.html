@@ -11,6 +11,40 @@
             background-color: #ffcba4;
             color: white;
         }
+	/* Navigation Bar */
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav.navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav.navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        nav.navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav.navbar .nav-links a:hover {
+            color: #ffdb58;
+        }
 
         /* Video Background */
         .video-background {
@@ -219,6 +253,19 @@
     </style>
 </head>
 <body>
+     <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Home of Nicky</div>
+        <ul class="nav-links">
+            <li><a href="file:///C:/Users/User/Desktop/mywebsite/about%20me.html" target="_blank">About</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/mywebsite/education.html" target="_blank">Education</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/mywebsite/gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/mywebsite/family.html" target="_blank">Family</a></li>
+            <li><a href="file:///C:/Users/User/Desktop/mywebsite/experience.html" target="_blank">Experience</a></li>
+        </ul>
+    </nav>
+
+
     <!-- Video Background -->
     <video class="video-background" autoplay muted loop>
         <source src="video/afiq.mp4" type="video/mp4">
